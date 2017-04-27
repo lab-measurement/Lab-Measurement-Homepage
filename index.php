@@ -112,19 +112,10 @@ merge requests, ... :) For browsing the code we also have a direct
 <p>Quite some <a href="docs/index.html">documentation of Lab::Measurement</a>
  is available. This
 documentation includes a <a href="docs/Measurement-Tutorial.html">tutorial on
-using Lab::Measurement</a> (outdated). Detailed <a href="docs/Measurement-Installation.html">installation
+using Lab::Measurement</a>. Detailed <a href="docs/Measurement-Installation.html">installation
 instructions</a> are provided as well. In addition, there's also a collection
-of <a href="backends.html">back-end specific documentation and links</a>.
+of <a href="backends.html">hardware back-end specific documentation and links</a>.
 </p>
-
-<h2>Status</h2>
-<p>Lab::Measurement is a the result of a full restructuring of the code of its predecessor
-Lab::VISA. Some time ago a new high-level interface, named Lab::XPRESS, was added. It provides for example
-automated measurement loops; check the XPRESS example scripts on the <a href="docs/index.html">documentation page</a>. 
-This has now stabilized and replaced the previous Lab::Measurement high level interface fully in our applications. Since the old
-high level interface is not being used anymore, starting with upcoming 3.600 release we
-will remove it to keep the package size maintainable. In general, if you want to use Lab::Measurement,
-it definitely helps to get in touch with us and contribute patches.<p>
 
 <p>Lab::Measurement is currently developed and employed at the <a
 href="http://www.physik.uni-regensburg.de/forschung/huettel/">carbon nanotube transport and nanomechanics 
