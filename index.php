@@ -67,6 +67,11 @@ may want to additionally install driver backends such as
   <li> Join our <a href="https://www-mailman.uni-regensburg.de/mailman/listinfo/lab-measurement-users"> mailing list</a></li>
 </ul>
 
+<p>Lab::Measurement is primarily developed at the <a
+href="http://www.physik.uni-regensburg.de/forschung/huettel/">carbon nanotube transport and nanomechanics 
+group, Uni Regensburg</a>. Feel free to try it, to hack, and to send us your improvements and bugfixes.</p>
+
+
 <h2>News</h2>
 
 <p>
@@ -116,12 +121,6 @@ using Lab::Measurement</a>. Detailed <a href="docs/Measurement-Installation.html
 instructions</a> are provided as well. In addition, there's also a collection
 of <a href="backends.html">hardware back-end specific documentation and links</a>.
 </p>
-
-<p>Lab::Measurement is currently developed and employed at the <a
-href="http://www.physik.uni-regensburg.de/forschung/huettel/">carbon nanotube transport and nanomechanics 
-group, Uni Regensburg</a>. Previously it has been used at, e.g., LMU München and Weizmann Institute of Science, 
-and we have heard about further applications in industrial r&amp;d 
-environments. Feel free to try it, to hack, and to send us your improvements and bugfixes.</p>
 
 <h2>Authors and history</h2>
 <p>The Lab::VISA system was originally developed by <a
