@@ -39,18 +39,13 @@ of internal details and make data aquisition as easy as
 
 <p>The Lab::Measurement software stack consists of several parts that are built
 on top of each other. This modularization allows support for a wide range of hardware
-on different operating systems. As hardware drivers vary in API details, each 
-supported one is encapsulated into Perl modules of types <i>Lab::Bus</i> and 
-<i>Lab::Connection</i>. Normally you won't have to care about this; at most, 
-your Instrument object (see below) gets different initialization parameters.</p>
-
-<p>A typical measurement script is based on the high-level interface provided by the modules 
-<i>Lab::Instrument</i> and <i>Lab::Measurement</i>. The former silently handles all the 
-protocol overhead. You can write commands to an instrument and read the result. Drivers 
-for specific devices are included, implementing their specific command syntax; more can 
-easily be added to provide high-level functions. The latter includes tools to automatically 
-generate measurement loops, for metadata handling (what was that amplifier setting in the 
-measurement again?!), data plotting, and similar.</p>
+on different operating systems. A typical measurement script is based on the high-level 
+interface provided by the modules <i>Lab::Instrument</i> and <i>Lab::Measurement</i>. The 
+former silently handles all the protocol overhead. You can write commands to an instrument 
+and read the result. Drivers for specific devices are included, implementing their specific 
+command syntax; more can easily be added to provide high-level functions. The latter 
+includes tools to automatically generate measurement loops, for metadata handling (what was 
+that amplifier setting in the measurement again?!), data plotting, and similar.</p>
 
 <p>
 While <i>Lab::Measurement</i> has built-in support for devices connected, e.g., via
@@ -69,7 +64,7 @@ may want to additionally install driver backends such as
 
 <p>Lab::Measurement is primarily developed at the <a
 href="http://www.physik.uni-regensburg.de/forschung/huettel/">carbon nanotube transport and nanomechanics 
-group, Uni Regensburg</a>. Feel free to try it, to hack, and to send us your improvements and bugfixes.</p>
+group, University of Regensburg</a>. Feel free to try it, to hack, and to send us your improvements and bugfixes.</p>
 
 
 <h2>News</h2>
@@ -108,30 +103,28 @@ foreach ($rss->items as $item ) {
 Lab::Measurement is free software and can be <a href="http://search.cpan.org/dist/Lab-Measurement/">downloaded 
 from CPAN</a>. The <a href="https://github.com/lab-measurement/lab-measurement">source code archive can 
 be found at Github</a>, where you can also obtain the newest pre-release code and 
-browse the version history. If you would like to contribute, just send us your patches, 
-merge requests, ... :) For browsing the code we also have a direct 
+browse the version history. For browsing the code we also have a direct 
 <a href="/gitweb/?p=labmeasurement;a=summary">gitweb access</a>.
 </p>
 
 <h2>Documentation</h2>
 <p>Quite some <a href="docs/index.html">documentation of Lab::Measurement</a>
- is available. This
-documentation includes a <a href="docs/Measurement-Tutorial.html">tutorial on
+is available. This documentation includes a <a href="docs/Measurement-Tutorial.html">tutorial on
 using Lab::Measurement</a>. Detailed <a href="docs/Measurement-Installation.html">installation
 instructions</a> are provided as well. In addition, there's also a collection
 of <a href="backends.html">hardware back-end specific documentation and links</a>.
 </p>
 
 <h2>Authors and history</h2>
-<p>The Lab::VISA system was originally developed by <a
+<p>The <i>Lab::VISA</i> packages were originally developed by <a
     href="http://search.cpan.org/~schroeer/">Daniel Schr&ouml;er</a> and
-continued by <a href="http://www.akhuettel.de/">Andreas K.
-H&uuml;ttel</a>, Daniela Taubert, and Daniel Schr&ouml;er. Most of the documentation was
+continued by <a href="http://www.akhuettel.de/">Andreas K. H&uuml;ttel</a>, Daniela 
+Taubert, and Daniel Schr&ouml;er. Most of the documentation was
 written by Daniel Schr&ouml;er. In 2011, the code was refactored mostly by Florian Olbrich
 to include the Bus and Connection layers; subsequently the name of the entire package collection
-was changed to Lab::Measurement. David Kalok, Hermann Kraus, and Alois Dirnaichner have contributed 
-additional code. The new Lab::XPRESS layer was contributed by  Christian Butschkow, Stefan Geissler and 
-Alexei Iankilevitch; current development is pushed ahead by Simon Reinhardt.
+was changed to <i>Lab::Measurement</i>. David Kalok, Hermann Kraus, and Alois Dirnaichner have contributed 
+additional code. The new <i>Lab::XPRESS</i> high-level layer was contributed by Christian Butschkow, 
+Stefan Geissler and Alexei Iankilevitch; current development is pushed ahead by Simon Reinhardt.
 </p>
 
 <h2>Acknowledgments</h2>
