@@ -28,7 +28,7 @@
       scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
 </div>
 
-<p>Lab::Measurement allows to perform test and measurement tasks with Perl 5
+<p><i>Lab::Measurement</i> allows to perform test and measurement tasks with Perl 5
 scripts. It provides an interface to several instrumentation control backends,
 as e.g. <a href="http://linux-gpib.sourceforge.net/">Linux-GPIB</a> or National Instruments' <a
 href="http://sine.ni.com/psp/app/doc/p/id/psp-411">NI-VISA library</a>.
@@ -37,34 +37,31 @@ of internal details and make data aquisition as easy as
 <pre class="titleclaim">$voltage = $multimeter-&gt;get_voltage();</pre>
 </p>
 
-<p>The Lab::Measurement software stack consists of several parts that are built
+<p>The <i>Lab::Measurement</i> software stack consists of several parts that are built
 on top of each other. This modularization allows support for a wide range of hardware
 on different operating systems. A typical measurement script is based on the high-level 
-interface provided by the modules <i>Lab::Instrument</i> and <i>Lab::Measurement</i>. The 
-former silently handles all the protocol overhead. You can write commands to an instrument 
-and read the result. Drivers for specific devices are included, implementing their specific 
-command syntax; more can easily be added to provide high-level functions. The latter 
+interface provided by the modules <i>Lab::Instrument</i> and <i>Lab::Measurement</i>. 
+All the protocol overhead is silently handled - you can write commands to an instrument 
+and read out the result. Drivers for specific devices are included, implementing their
+command syntax; more can easily be added to provide high-level functions. <i>Lab::Measurement</i>
 includes tools to automatically generate measurement loops, for metadata handling (what was 
 that amplifier setting in the measurement again?!), data plotting, and similar.</p>
 
 <p>
-While <i>Lab::Measurement</i> has built-in support for devices connected, e.g., via
-ethernet, serial port, or the Linux USB Test&amp;Measurement kernel driver, you 
-may want to additionally install driver backends such as
-<a href="http://search.cpan.org/dist/Lab-VISA/"><i>Lab::VISA</i></a> or
-<a href="http://linux-gpib.sourceforge.net/" target="_blank"><i>LinuxGPIB</i></a>.
+Lab::Measurement is primarily developed at the <a
+href="http://www.physik.uni-regensburg.de/forschung/huettel/">Carbon Nanotube Transport 
+and Nanomechanics Group, University of Regensburg</a>. Feel free to try it, to hack, and to 
+send us your improvements and bugfixes.
 </p>
+
 
 <h2>Contact</h2>
 <ul>
   <li> Join the <a href="http://webchat.freenode.net/?channels=labmeasurement">
   #labmeasurement</a> channel on Freenode IRC </li>
   <li> Join our <a href="https://www-mailman.uni-regensburg.de/mailman/listinfo/lab-measurement-users"> mailing list</a></li>
+  <li> Report bugs <a href="https://github.com/lab-measurement/lab-measurement/issues">on our Issue tracker</a></li>
 </ul>
-
-<p>Lab::Measurement is primarily developed at the <a
-href="http://www.physik.uni-regensburg.de/forschung/huettel/">carbon nanotube transport and nanomechanics 
-group, University of Regensburg</a>. Feel free to try it, to hack, and to send us your improvements and bugfixes.</p>
 
 
 <h2>News</h2>
@@ -105,6 +102,14 @@ from CPAN</a>. The <a href="https://github.com/lab-measurement/lab-measurement">
 be found at Github</a>, where you can also obtain the newest pre-release code and 
 browse the version history. For browsing the code we also have a direct 
 <a href="/gitweb/?p=labmeasurement;a=summary">gitweb access</a>.
+</p>
+
+<p>
+While <i>Lab::Measurement</i> has built-in support for devices connected, e.g., via
+ethernet, serial port, or the Linux USB Test&amp;Measurement kernel driver, you 
+may want to additionally install driver backends such as
+<a href="http://search.cpan.org/dist/Lab-VISA/"><i>Lab::VISA</i></a> or
+<a href="http://linux-gpib.sourceforge.net/" target="_blank"><i>LinuxGPIB</i></a>.
 </p>
 
 <h2>Documentation</h2>
