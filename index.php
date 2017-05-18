@@ -95,7 +95,7 @@ foreach ($rss->items as $item ) {
 </p>
 
 
-<h2>License</h2>
+<a name="license"><h2>License</h2></a>
 <p>
 Lab::Measurement is free software, released under <a 
 href="http://dev.perl.org/licenses/">the same terms as Perl itself</a>; this 
