@@ -94,9 +94,20 @@ foreach ($rss->items as $item ) {
 </ul>
 </p>
 
+
+<h2>License</h2>
+<p>
+Lab::Measurement is free software, released under <a 
+href="http://dev.perl.org/licenses/">the same terms as Perl itself</a>; this 
+means you have the choice of any version of the <a 
+href="https://www.gnu.org/licenses/gpl">GNU General Public License</a> or of the 
+<a href="http://dev.perl.org/licenses/artistic.html">Artistic License</a>.
+</p>
+
 <h2>How to obtain</h2>
 <p>
-Lab::Measurement is free software and can be <a href="http://search.cpan.org/dist/Lab-Measurement/">downloaded 
+Lab::Measurement can be <a 
+href="http://search.cpan.org/dist/Lab-Measurement/">downloaded 
 from CPAN</a>. The <a href="https://github.com/lab-measurement/lab-measurement">source code archive can 
 be found at Github</a>, where you can also obtain the newest pre-release code and 
 browse the version history. For browsing the code we also have a direct 
