@@ -139,7 +139,8 @@ written by Daniel Schr&ouml;er. In 2011, the code was refactored mostly by Flori
 to include the Bus and Connection layers; subsequently the name of the entire package collection
 was changed to <i>Lab::Measurement</i>. David Kalok, Hermann Kraus, and Alois Dirnaichner have contributed 
 additional code. The new <i>Lab::XPRESS</i> high-level layer was contributed by Christian Butschkow, 
-Stefan Geissler and Alexei Iankilevitch; current development is pushed ahead by Simon Reinhardt.
+Stefan Geissler and Alexei Iankilevitch; current development is pushed ahead by
+    <a href="https://github.com/amba">Simon Reinhardt</a>.
 </p>
 
 <h2>Acknowledgments</h2>
