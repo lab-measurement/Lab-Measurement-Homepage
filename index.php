@@ -21,7 +21,8 @@
         <li><a href="http://search.cpan.org/dist/Lab-Measurement/">CPAN releases</a></li>
         <li><a href="https://github.com/lab-measurement/lab-measurement">Github repository</a></li>
     </ul>
-    <h2>Build status</h2>
+    <h2>Development self-test</h2>
+    <br>
     <img src="https://travis-ci.org/lab-measurement/lab-measurement.svg?branch=master"><br>
     <img src="https://ci.appveyor.com/api/projects/status/nx2lyvat5dm2s41q/branch/master?svg=true"><br>
     <br>
