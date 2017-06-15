@@ -21,10 +21,13 @@
         <li><a href="http://search.cpan.org/dist/Lab-Measurement/">CPAN releases</a></li>
         <li><a href="https://github.com/lab-measurement/lab-measurement">Github repository</a></li>
     </ul>
-    <h2>Development self-test</h2>
+    <h2>Development build self-test</h2>
     <br>
-    <img src="https://travis-ci.org/lab-measurement/lab-measurement.svg?branch=master"><br>
-    <img src="https://ci.appveyor.com/api/projects/status/nx2lyvat5dm2s41q/branch/master?svg=true"><br>
+    <table><tr><td>Linux</td><td><a href="https://travis-ci.org/lab-measurement/lab-measurement" target="_blank">
+    <img src="https://travis-ci.org/lab-measurement/lab-measurement.svg?branch=master"></a>
+    </td></tr><tr><td>Windows</td><td><a href="https://ci.appveyor.com/project/akhuettel/lab-measurement" target="_blank">
+    <img src="https://ci.appveyor.com/api/projects/status/nx2lyvat5dm2s41q/branch/master?svg=true"></a>
+    </tr></table>
     <br>
     <iframe
       src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.labmeasurement.de%2F&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21"
