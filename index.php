@@ -24,7 +24,7 @@
     <h2>Development build self-test</h2>
     <br>
     <table><tr><td>Linux</td><td><a href="https://travis-ci.org/lab-measurement/lab-measurement" target="_blank">
-    <img src="https://travis-ci.org/lab-measurement/lab-measurement.svg?branch=master"></a>
+    <img src="https://travis-ci.org/lab-measurement/Lab-Measurement.svg?branch=master"></a>
     </td></tr><tr><td>Windows</td><td><a href="https://ci.appveyor.com/project/akhuettel/lab-measurement" target="_blank">
     <img src="https://ci.appveyor.com/api/projects/status/nx2lyvat5dm2s41q/branch/master?svg=true"></a>
     </tr></table>
