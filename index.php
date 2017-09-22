@@ -134,7 +134,7 @@ may want to additionally install driver backends such as
 is available. This documentation includes a <a href="docs/Measurement-Tutorial.html">tutorial on
 using Lab::Measurement</a>. Detailed <a href="docs/Measurement-Installation.html">installation
 instructions</a> are provided as well. In addition, there's also a collection
-of <a href="backends.html">hardware back-end specific documentation and links</a>.
+of <a href="docs/Lab-Measurement-Backends.html">hardware back-end specific documentation and links</a>.
 </p>
 
 <h2>Authors and history</h2>
