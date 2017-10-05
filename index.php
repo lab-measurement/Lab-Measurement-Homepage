@@ -80,14 +80,28 @@ define('MAGPIE_CACHE_DIR', '/tmp/labmeasurement_magpie_cache');
 
 require_once 'magpierss/rss_fetch.inc';
 
-$url = 'http://dilfridge.blogspot.com/feeds/posts/default/-/lab-measurement';
-$rss = fetch_rss($url);
+$url1 = 'http://dilfridge.blogspot.com/feeds/posts/default/-/lab-measurement';
+$rss1 = fetch_rss($url1);
+$name1= 'Andreas K. Hüttel';
+foreach ($rss1->items as &$item1) { $item1['author']=$name1; }
+
+$url2 = 'http://blogs.perl.org/mt/mt-search.fcgi?blog_id=2858&tag=lab-measurement&Template=feed&limit=20';
+$rss2 = fetch_rss($url2);
+$name2= 'Simon Reinhardt';
+foreach ($rss2->items as &$item2) { $item2['author']=$name2; }
+
+$allitems = array_merge($rss1->items, $rss2->items);
+
+function so ($a, $b) { return (strcmp ($b['published'],$a['published']));    }
+uasort($allitems, 'so');
+
 $counter = 1;
 
-foreach ($rss->items as $item ) {
+foreach ($allitems as $item ) {
     if ($counter<5) {
         $title = $item['title'];
         $published = preg_replace('/T.*$/','',$item['published']);
+        $author = $item['author'];
         echo "<li><a href='news.php#pos$counter'>";
         if ($counter == 1) { echo "<b>"; };
         echo "$published: $title";
