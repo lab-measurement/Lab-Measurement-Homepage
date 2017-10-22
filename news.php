@@ -48,8 +48,8 @@ foreach ($allitems as $item ) {
         $published = preg_replace('/T.*$/','',$item['published']);
         $author = $item['author'];
         echo "<a name='pos$counter'><h2>$title &nbsp; <font size='-1'>(posted $published by $author)</font></h2></a>\n";
-        echo "<p>$item[atom_content]</p>\n\n";
-        echo "<a href='$item[link]'> read original post</a>\n\n";
+        echo "<p>$item[atom_content]<br>";
+        echo "<div align="right"><font size='-1'><a href='$item[link]'>&rarr; original post</a></font></div></p>\n\n";
         $counter++;
     };
 }
