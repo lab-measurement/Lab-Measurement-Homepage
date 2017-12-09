@@ -18,7 +18,7 @@
     <?php include 'deflinks.html'; ?>
     <h2>Download Lab::Measurement</h2>
     <ul>
-        <li><a href="http://search.cpan.org/dist/Lab-Measurement/">CPAN releases</a></li>
+        <li><a href="https://metacpan.org/release/Lab-Measurement">CPAN releases</a></li>
         <li><a href="https://github.com/lab-measurement/Lab-Measurement">Github repository</a></li>
     </ul>
     <h2>Development build self-test</h2>
@@ -128,7 +128,7 @@ href="https://www.gnu.org/licenses/gpl">GNU General Public License</a> or of the
 <h2>How to obtain</h2>
 <p>
 Lab::Measurement can be <a 
-href="http://search.cpan.org/dist/Lab-Measurement/">downloaded 
+href="https://metacpan.org/release/Lab-Measurement">downloaded 
 from CPAN</a>. The <a href="https://github.com/lab-measurement/lab-measurement">source code archive can 
 be found at Github</a>, where you can also obtain the newest pre-release code and 
 browse the version history. For browsing the code we also have a direct 
@@ -139,21 +139,21 @@ browse the version history. For browsing the code we also have a direct
 While <i>Lab::Measurement</i> has built-in support for devices connected, e.g., via
 ethernet, serial port, or the Linux USB Test&amp;Measurement kernel driver, you 
 may want to additionally install driver backends such as
-<a href="http://search.cpan.org/dist/Lab-VISA/"><i>Lab::VISA</i></a> or
+<a href="https://metacpan.org/pod/distribution/Lab-VISA/VISA.pod"><i>Lab::VISA</i></a> or
 <a href="http://linux-gpib.sourceforge.net/" target="_blank"><i>LinuxGPIB</i></a>.
 </p>
 
 <h2>Documentation</h2>
-<p>Quite some <a href="docs/index.html">documentation of Lab::Measurement</a>
-is available. This documentation includes a <a href="docs/Measurement-Tutorial.html">tutorial on
-using Lab::Measurement</a>. Detailed <a href="docs/Measurement-Installation.html">installation
+<p>Quite some <a href="https://metacpan.org/pod/distribution/Lab-Measurement/lib/Lab/Measurement/Manual.pod">documentation of Lab::Measurement</a>
+is available. This documentation includes a <a href="https://metacpan.org/pod/distribution/Lab-Measurement/lib/Lab/Measurement/Tutorial.pod">tutorial on
+using Lab::Measurement</a>. Detailed <a href="https://metacpan.org/pod/distribution/Lab-Measurement/lib/Lab/Measurement/Installation.pod">installation
 instructions</a> are provided as well. In addition, there's also a collection
-of <a href="docs/Lab-Measurement-Backends.html">hardware back-end specific documentation and links</a>.
+of <a href="https://metacpan.org/pod/distribution/Lab-Measurement/lib/Lab/Measurement/Backends.pod">hardware back-end specific documentation and links</a>.
 </p>
 
 <h2>Authors and history</h2>
 <p>The <i>Lab::VISA</i> packages were originally developed by <a
-    href="http://search.cpan.org/~schroeer/">Daniel Schr&ouml;er</a> and
+    href="https://metacpan.org/author/SCHROEER">Daniel Schr&ouml;er</a> and
 continued by <a href="http://www.akhuettel.de/">Andreas K. H&uuml;ttel</a>, Daniela 
 Taubert, and Daniel Schr&ouml;er. Most of the documentation was
 written by Daniel Schr&ouml;er. In 2011, the code was refactored mostly by Florian Olbrich

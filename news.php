@@ -12,7 +12,7 @@
     <?php include 'deflinks.html'; ?>
     <h2>Download Lab::Measurement</h2>
     <ul>
-        <li><a href="http://search.cpan.org/dist/Lab-Measurement/">CPAN releases</a></li>
+        <li><a href="https://metacpan.org/release/Lab-Measurement">CPAN releases</a></li>
         <li><a href="https://github.com/lab-measurement/lab-measurement">Github</a></li>
         <li><a href="http://www.labmeasurement.de/gitweb/?p=labmeasurement;a=summary">Gitweb browser</a></li>
     </ul>
