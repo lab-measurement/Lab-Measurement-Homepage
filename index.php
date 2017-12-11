@@ -139,16 +139,16 @@ browse the version history. For browsing the code we also have a direct
 While <i>Lab::Measurement</i> has built-in support for devices connected, e.g., via
 ethernet, serial port, or the Linux USB Test&amp;Measurement kernel driver, you 
 may want to additionally install driver backends such as
-<a href="https://metacpan.org/pod/distribution/Lab-VISA/VISA.pod"><i>Lab::VISA</i></a> or
+<a href="https://metacpan.org/pod/Lab::VISA"><i>Lab::VISA</i></a> or
 <a href="http://linux-gpib.sourceforge.net/" target="_blank"><i>LinuxGPIB</i></a>.
 </p>
 
 <h2>Documentation</h2>
-<p>Quite some <a href="https://metacpan.org/pod/distribution/Lab-Measurement/lib/Lab/Measurement/Manual.pod">documentation of Lab::Measurement</a>
-is available. This documentation includes a <a href="https://metacpan.org/pod/distribution/Lab-Measurement/lib/Lab/Measurement/Tutorial.pod">tutorial on
-using Lab::Measurement</a>. Detailed <a href="https://metacpan.org/pod/distribution/Lab-Measurement/lib/Lab/Measurement/Installation.pod">installation
+<p>Quite some <a href="https://metacpan.org/pod/Lab::Measurement::Manual">documentation of Lab::Measurement</a>
+is available. This documentation includes a <a href="https://metacpan.org/pod/Lab::Measurement::Tutorial">tutorial on
+using Lab::Measurement</a>. Detailed <a href="https://metacpan.org/pod/Lab::Measurement::Installation">installation
 instructions</a> are provided as well. In addition, there's also a collection
-of <a href="https://metacpan.org/pod/distribution/Lab-Measurement/lib/Lab/Measurement/Backends.pod">hardware back-end specific documentation and links</a>.
+of <a href="https://metacpan.org/pod/Lab::Measurement::Backends">hardware back-end specific documentation and links</a>.
 </p>
 
 <h2>Authors and history</h2>
