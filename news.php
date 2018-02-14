@@ -18,7 +18,7 @@
     </ul>
 </div>
 
-<?php 
+<?php
 
 define('MAGPIE_CACHE_DIR', '/tmp/labmeasurement_magpie_cache');
 
@@ -43,12 +43,13 @@ $counter = 1;
 
 foreach ($allitems as $item ) {
     if ($counter<15) {
-        $title = $item['title'];
+        $title = utf8_encode( $item['title'] );
         $url   = $item['link'];
         $published = preg_replace('/T.*$/','',$item['published']);
-        $author = $item['author'];
+        $author = utf8_encode ( $item['author'] );
+	$content = utf8_encode ( $item[atom_content] );
         echo "<a name='pos$counter'><h2>$title &nbsp; <font size='-1'>(posted $published by $author, <a href='$item[link]'>&rarr; original post</a>)</font></h2></a>\n";
-        echo "<p>$item[atom_content]<br></p>\n";
+        echo "<p>$content<br></p>\n";
         $counter++;
     };
 }
