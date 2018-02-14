@@ -46,7 +46,7 @@ foreach ($allitems as $item ) {
         $title = utf8_encode( $item['title'] );
         $url   = $item['link'];
         $published = preg_replace('/T.*$/','',$item['published']);
-        $author = utf8_encode ( $item['author'] );
+        $author = $item['author'];
 	$content = utf8_encode ( $item[atom_content] );
         echo "<a name='pos$counter'><h2>$title &nbsp; <font size='-1'>(posted $published by $author, <a href='$item[link]'>&rarr; original post</a>)</font></h2></a>\n";
         echo "<p>$content<br></p>\n";
