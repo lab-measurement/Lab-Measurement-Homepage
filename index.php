@@ -115,16 +115,6 @@ foreach ($allitems as $item ) {
 </ul>
 </p>
 
-
-<a name="license"><h2>License</h2></a>
-<p>
-Lab::Measurement is free software, released under <a 
-href="http://dev.perl.org/licenses/">the same terms as Perl itself</a>; this 
-means you have the choice of any version of the <a 
-href="https://www.gnu.org/licenses/gpl">GNU General Public License</a> or of the 
-<a href="http://dev.perl.org/licenses/artistic.html">Artistic License</a>.
-</p>
-
 <h2>How to obtain</h2>
 <p>
 Lab::Measurement can be <a 
@@ -133,6 +123,15 @@ from CPAN</a>. The <a href="https://github.com/lab-measurement/lab-measurement">
 be found at Github</a>, where you can also obtain the newest pre-release code and 
 browse the version history. For browsing the code we also have a direct 
 <a href="/gitweb/?p=labmeasurement;a=summary">gitweb access</a>.
+</p>
+
+<p>
+Please consider citing Lab::Measurement in publications where you have used it to measure. Here's how:
+<blockquote>
+S. Reinhardt, C. Butschkow, S. Geissler, A. Dirnaichner, F. Olbrich, C. Lane, D. Schröer, and A. K. Hüttel,
+<i>"Lab::Measurement — a portable and extensible framework for controlling lab equipment and conducting measurements"</i>,
+<a href="https://arxiv.org/abs/1804.03321">arXiv:1804.03321</a> (2018). (<a href="labmeasurement.bib">BibTeX file</a>)
+</blockquote>
 </p>
 
 <p>
@@ -162,6 +161,15 @@ was changed to <i>Lab::Measurement</i>. David Kalok, Hermann Kraus, and Alois Di
 additional code. The new <i>Lab::XPRESS</i> high-level layer was contributed by Christian Butschkow, 
 Stefan Geissler and Alexei Iankilevitch; current development is pushed ahead by
     <a href="https://github.com/amba">Simon Reinhardt</a>.
+</p>
+
+<a name="license"><h2>License</h2></a>
+<p>
+Lab::Measurement is free software, released under <a
+href="http://dev.perl.org/licenses/">the same terms as Perl itself</a>; this
+means you have the choice of any version of the <a
+href="https://www.gnu.org/licenses/gpl">GNU General Public License</a> or of the
+<a href="http://dev.perl.org/licenses/artistic.html">Artistic License</a>.
 </p>
 
 <h2>Acknowledgments</h2>
