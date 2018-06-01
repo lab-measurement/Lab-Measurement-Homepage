@@ -57,7 +57,12 @@ that amplifier setting in the measurement again?!), data plotting, and similar.<
 Lab::Measurement is primarily developed at the <a
 href="http://www.physik.uni-regensburg.de/forschung/huettel/">Carbon Nanotube Transport 
 and Nanomechanics Group, University of Regensburg</a>. Feel free to try it, to hack, and to 
-send us your improvements and bugfixes.
+send us your improvements and bugfixes. The latest release is <b>Lab::Measurement 
+<?php 
+$json=file_get_contents("https://fastapi.metacpan.org/v1/release/Lab-Measurement");
+$obj=json_decode($json);
+print $obj->{'version'};
+?></b>.
 </p>
 
 
