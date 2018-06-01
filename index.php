@@ -34,6 +34,25 @@
       scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
 </div>
 
+<?php
+/* derived from https://davidwalsh.name/php-cache-function, MIT-licensed */
+/* gets the contents of a file if it exists, otherwise grabs url and caches */
+function cached_get_content($file,$url,$hours = 24,$fn = '',$fn_args = '') {
+    $current_time = time();
+    $expire_time = $hours * 60 * 60;
+	$file_time = filemtime($file);
+	if(file_exists($file) && ($current_time - $expire_time < $file_time)) {
+		return file_get_contents($file);
+	}
+	else {
+		$content = file_get_contents($url);
+		if($fn) { $content = $fn($content,$fn_args); }
+		file_put_contents($file,$content);
+		return $content;
+	}
+}
+?>
+
 <p><i>Lab::Measurement</i> allows to perform test and measurement tasks with Perl 5
 scripts. It provides an interface to several instrumentation control backends,
 as e.g. <a href="http://linux-gpib.sourceforge.net/">Linux-GPIB</a> or National Instruments' <a
@@ -59,7 +78,8 @@ href="http://www.physik.uni-regensburg.de/forschung/huettel/">Carbon Nanotube Tr
 and Nanomechanics Group, University of Regensburg</a>. Feel free to try it, to hack, and to 
 send us your improvements and bugfixes. The latest release is <b>Lab::Measurement 
 <?php 
-$json=file_get_contents("https://fastapi.metacpan.org/v1/release/Lab-Measurement");
+$json=cached_get_content("/tmp/labmeasurement_magpie_cache/.metacpan-release",
+                  "https://fastapi.metacpan.org/v1/release/Lab-Measurement");
 $obj=json_decode($json);
 print $obj->{'version'};
 ?></b>.
