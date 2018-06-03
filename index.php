@@ -64,9 +64,8 @@ of internal details and make data aquisition as easy as
 
 <p>The <i>Lab::Measurement</i> software stack consists of several parts that are built
 on top of each other. This modularization allows support for a wide range of hardware
-on different operating systems. A typical measurement script is based on the high-level 
-interface provided by the modules <i>Lab::Instrument</i> and <i>Lab::Measurement</i>. 
-All the protocol overhead is silently handled - you can write commands to an instrument 
+on different operating systems. 
+The protocol overhead is silently handled - you can write commands to an instrument 
 and read out the result. Drivers for specific devices are included, implementing their
 command syntax; more can easily be added to provide high-level functions. <i>Lab::Measurement</i>
 includes tools to automatically generate measurement loops, for metadata handling (what was 
@@ -142,7 +141,7 @@ foreach ($allitems as $item ) {
 
 <h2>How to obtain</h2>
 <p>
-Lab::Measurement can be <a 
+<i>Lab::Measurement</i> can be <a 
 href="https://metacpan.org/release/Lab-Measurement">downloaded 
 from CPAN</a>. The <a href="https://github.com/lab-measurement/lab-measurement">source code archive can 
 be found at Github</a>, where you can also obtain the newest pre-release code and 
@@ -151,7 +150,8 @@ browse the version history. For browsing the code we also have a direct
 </p>
 
 <p>
-Please consider citing Lab::Measurement in publications where you have used it to measure. Here's how (<a href="labmeasurement.bib">BibTeX file</a>):
+Please consider citing <i>Lab::Measurement</i> in publications where you have used it to measure. 
+Here's how (<a href="labmeasurement.bib">BibTeX file</a>):
 <blockquote>
 S. Reinhardt, C. Butschkow, S. Geissler, A. Dirnaichner, F. Olbrich, C. Lane, D. Schröer, and A. K. Hüttel,
 <i>"Lab::Measurement — a portable and extensible framework for controlling lab equipment and conducting measurements"</i>,
@@ -168,9 +168,9 @@ may want to additionally install driver backends such as
 </p>
 
 <h2>Documentation</h2>
-<p>Quite some <a href="https://metacpan.org/pod/Lab::Measurement::Manual">documentation of Lab::Measurement</a>
+<p>Quite some <a href="https://metacpan.org/pod/Lab::Measurement::Manual">documentation of <i>Lab::Measurement</i></a>
 is available. This documentation includes a <a href="https://metacpan.org/pod/Lab::Measurement::Tutorial">tutorial on
-using Lab::Measurement</a>. Detailed <a href="https://metacpan.org/pod/Lab::Measurement::Installation">installation
+using <i>Lab::Measurement</i></a>. Detailed <a href="https://metacpan.org/pod/Lab::Measurement::Installation">installation
 instructions</a> are provided as well. In addition, there's also a collection
 of <a href="https://metacpan.org/pod/Lab::Measurement::Backends">hardware back-end specific documentation and links</a>.
 </p>
@@ -185,12 +185,13 @@ to include the Bus and Connection layers; subsequently the name of the entire pa
 was changed to <i>Lab::Measurement</i>. David Kalok, Hermann Kraus, and Alois Dirnaichner have contributed 
 additional code. The new <i>Lab::XPRESS</i> high-level layer was contributed by Christian Butschkow, 
 Stefan Geissler and Alexei Iankilevitch; current development is pushed ahead by
-    <a href="https://github.com/amba">Simon Reinhardt</a>.
+<a href="https://github.com/amba">Simon Reinhardt</a> with the port of the entire module 
+stack to <i>Moose</i>.
 </p>
 
 <a name="license"><h2>License</h2></a>
 <p>
-Lab::Measurement is free software, released under <a
+<i>Lab::Measurement</i> is free software, released under <a
 href="http://dev.perl.org/licenses/">the same terms as Perl itself</a>; this
 means you have the choice of any version of the <a
 href="https://www.gnu.org/licenses/gpl">GNU General Public License</a> or of the
@@ -198,7 +199,7 @@ href="https://www.gnu.org/licenses/gpl">GNU General Public License</a> or of the
 </p>
 
 <h2>Acknowledgments</h2>
-<p>The continued improvement of Lab::Measurement was supported by the
+<p>The continued improvement of <i>Lab::Measurement</i> was supported by the
 <a href="http://www.dfg.de/en/" target="_blank">Deutsche Forschungsgemeinschaft</a>
 via grants Hu 1808/1 (Emmy Noether program), collaborative research centre 
 <a href="http://www-app.uni-regensburg.de/Fakultaeten/Physik/sfb689/" target="_blank">SFB 689</a>,
