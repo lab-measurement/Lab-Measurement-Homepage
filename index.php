@@ -151,11 +151,11 @@ browse the version history. For browsing the code we also have a direct
 
 <p>
 Please consider citing <i>Lab::Measurement</i> in publications where you have used it to measure. 
-Here's how (<a href="labmeasurement.bib">BibTeX file</a>):
+Here's how:
 <blockquote>
 S. Reinhardt, C. Butschkow, S. Geissler, A. Dirnaichner, F. Olbrich, C. Lane, D. Schröer, and A. K. Hüttel,
 <i>"Lab::Measurement — a portable and extensible framework for controlling lab equipment and conducting measurements"</i>,
-<a href="https://arxiv.org/abs/1804.03321">arXiv:1804.03321</a> (2018).
+<a href="http://dx.doi.org/10.1016/j.cpc.2018.07.024">Computer Physics Communications, doi:10.1016/j.cpc.2018.07.024 (2018)</a>.
 </blockquote>
 </p>
 
