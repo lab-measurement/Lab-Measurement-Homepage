@@ -185,7 +185,7 @@ to include the Bus and Connection layers; subsequently the name of the entire pa
 was changed to <i>Lab::Measurement</i>. David Kalok, Hermann Kraus, and Alois Dirnaichner have contributed 
 additional code. The new <i>Lab::XPRESS</i> high-level layer was contributed by Christian Butschkow, 
 Stefan Geissler and Alexei Iankilevitch; current development is pushed ahead by
-<a href="https://github.com/amba">Simon Reinhardt</a> with the port of the entire module 
+<a href="https://www.researchgate.net/profile/Simon_Reinhardt">Simon Reinhardt</a> with the port of the entire module 
 stack to <i>Moose</i>.
 </p>
 
