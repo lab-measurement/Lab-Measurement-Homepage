@@ -155,7 +155,7 @@ Here's how:
 <blockquote>
 S. Reinhardt, C. Butschkow, S. Geissler, A. Dirnaichner, F. Olbrich, C. Lane, D. Schröer, and A. K. Hüttel,
 <i>"Lab::Measurement — a portable and extensible framework for controlling lab equipment and conducting measurements"</i>,
-<a href="http://dx.doi.org/10.1016/j.cpc.2018.07.024">Computer Physics Communications, doi:10.1016/j.cpc.2018.07.024 (2018)</a>.
+<a href="http://dx.doi.org/10.1016/j.cpc.2018.07.024">Computer Physics Communications <b>234</b>, 216 (2019)</a>.
 </blockquote>
 </p>
 
