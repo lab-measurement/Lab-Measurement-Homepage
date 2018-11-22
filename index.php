@@ -8,7 +8,6 @@
 <meta property="og:url" content="http://www.labmeasurement.de/" />
 <meta property="og:image" content="http://www.labmeasurement.de/screen.png" />
 <meta property="og:site_name" content="Lab::Measurement" />
-<meta property="fb:admins" content="1016535977" />
 <link rel="stylesheet" type="text/css" href="doku.css" />
 </head>
 <body>
@@ -29,9 +28,6 @@
     <img src="https://ci.appveyor.com/api/projects/status/nx2lyvat5dm2s41q/branch/master?svg=true"></a>
     </tr></table>
     <br>
-    <iframe
-      src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.labmeasurement.de%2F&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21"
-      scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
 </div>
 
 <?php
