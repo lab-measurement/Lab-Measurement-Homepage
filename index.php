@@ -83,8 +83,8 @@ print $obj->{'version'};
 
 <h2>Contact</h2>
 <ul>
-  <li> Join the <a href="http://webchat.freenode.net/?channels=labmeasurement">
-  #labmeasurement</a> channel on Freenode IRC </li>
+  <li> Join the <a href="http://web.libera.chat/?channels=#labmeasurement">
+  #labmeasurement</a> channel on Libera.Chat IRC </li>
   <li> Join our <a href="https://www-mailman.uni-regensburg.de/mailman/listinfo/lab-measurement-users"> mailing list</a></li>
   <li> Report bugs <a href="https://github.com/lab-measurement/lab-measurement/issues">on our Issue tracker</a></li>
 </ul>
