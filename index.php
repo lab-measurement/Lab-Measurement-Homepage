@@ -179,10 +179,10 @@ Taubert, and Daniel Schr&ouml;er. Most of the documentation was
 written by Daniel Schr&ouml;er. In 2011, the code was refactored mostly by Florian Olbrich
 to include the Bus and Connection layers; subsequently the name of the entire package collection
 was changed to <i>Lab::Measurement</i>. David Kalok, Hermann Kraus, and Alois Dirnaichner have contributed 
-additional code. The new <i>Lab::XPRESS</i> high-level layer was contributed by Christian Butschkow, 
-Stefan Geissler and Alexei Iankilevitch; current development is pushed ahead by
-<a href="https://www.researchgate.net/profile/Simon_Reinhardt">Simon Reinhardt</a> with the port of the entire module 
-stack to <i>Moose</i>.
+additional code. The <i>Lab::XPRESS</i> high-level layer was added by Christian Butschkow,
+Stefan Geissler and Alexei Iankilevitch. Since 2016 development is pushed ahead by
+<a href="https://www.researchgate.net/profile/Simon_Reinhardt">Simon Reinhardt</a> with the port
+of the entire module stack to <i>Moose</i>.
 </p>
 
 <a name="license"><h2>License</h2></a>
