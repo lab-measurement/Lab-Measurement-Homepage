@@ -199,16 +199,20 @@ href="https://www.gnu.org/licenses/gpl">GNU General Public License</a> or of the
 <h2>Acknowledgments</h2>
 <p>The continued improvement of <i>Lab::Measurement</i> was supported by the
 <a href="http://www.dfg.de/en/" target="_blank">Deutsche Forschungsgemeinschaft</a>
-via grants Hu 1808/1 (Emmy Noether program), collaborative research centre 
+via grants Hu 1808/1 (Emmy Noether program), collaborative research centres 
 <a href="http://www-app.uni-regensburg.de/Fakultaeten/Physik/sfb689/" target="_blank">SFB 689</a>,
+<a href="https://www.sfb1277-regensburg.de/" target="_blank">SFB 1277</a>,
 and graduate research school <a href="http://www.physik.uni-regensburg.de/forschung/gk_carbonano/"
-target="_blank">GRK 1570</a>.
+target="_blank">GRK 1570</a>, as well as directly by the <a href="http://www.ur.de/"
+target="_blank">Universität Regensburg</a>.
 </p>
 
 <p>
-<img src="logo-emmy.png" height="150" alt="Emmy Noether logo">
-<img src="logo-sfb689.png" height="150" alt="SFB 689 logo"> 
-<img src="logo-grk.png" height="150" alt="GRK 1570 logo"> 
+<img src="logo-emmy.png" height="120" alt="Emmy Noether logo">
+<img src="logo-sfb689.png" height="120" alt="SFB 689 logo"> 
+<img src="logo-grk.png" height="120" alt="GRK 1570 logo"> 
+<img src="logo-sfb1277.png" height="120" alt="SFB 1277 logo"> 
+<img src="logo-ur.png" height="120" alt="UR logo"> 
 </p>
 
 </body>
