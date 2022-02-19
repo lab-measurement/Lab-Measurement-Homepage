@@ -95,7 +95,7 @@ function fetch_rss ($url) {
     }
     
     // if cache is disabled
-    if ( PHP_MAJOR_VERSION >= 8 || !MAGPIE_CACHE_ON ) {
+    if ( !MAGPIE_CACHE_ON ) {
         // fetch file, and parse it
         $resp = _fetch_remote_file( $url );
         if ( is_success( $resp->status ) ) {
