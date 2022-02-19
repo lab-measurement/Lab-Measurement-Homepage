@@ -208,11 +208,11 @@ target="_blank">Universität Regensburg</a>.
 </p>
 
 <p>
-<img src="logo-emmy.png" height="120" alt="Emmy Noether logo">
-<img src="logo-sfb689.png" height="120" alt="SFB 689 logo"> 
-<img src="logo-grk.png" height="120" alt="GRK 1570 logo"> 
-<img src="logo-sfb1277.png" height="120" alt="SFB 1277 logo"> 
-<img src="logo-ur.png" height="120" alt="UR logo"> 
+<img src="logo-emmy.png" height="100" alt="Emmy Noether logo">
+<img src="logo-sfb689.png" height="100" alt="SFB 689 logo"> 
+<img src="logo-grk.png" height="100" alt="GRK 1570 logo"> 
+<img src="logo-sfb1277.png" height="100" alt="SFB 1277 logo"> 
+<img src="logo-ur.png" height="100" alt="UR logo"> 
 </p>
 
 </body>
