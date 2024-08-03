@@ -71,7 +71,7 @@ that amplifier setting in the measurement again?!), data plotting, and similar.<
 
 <p>
 Lab::Measurement is primarily developed at the <a
-href="http://www.physik.uni-regensburg.de/forschung/huettel/">Carbon Nanotube Transport 
+href="https://www.akhuettel.de/group/">Carbon Nanotube Transport 
 and Nanomechanics Group, University of Regensburg</a>. Feel free to try it, to hack, and to 
 send us your improvements and bugfixes. The latest release is <i>Lab::Measurement 
 <?php 
@@ -87,7 +87,6 @@ print $obj->{'version'};
 <ul>
   <li> Join the <a href="http://web.libera.chat/?channels=#labmeasurement">
   #labmeasurement</a> channel on Libera.Chat IRC </li>
-  <li> Join our <a href="https://www-mailman.uni-regensburg.de/mailman/listinfo/lab-measurement-users"> mailing list</a></li>
   <li> Report bugs <a href="https://github.com/lab-measurement/lab-measurement/issues">on our Issue tracker</a></li>
 </ul>
 
@@ -200,9 +199,9 @@ href="https://www.gnu.org/licenses/gpl">GNU General Public License</a> or of the
 <p>The continued improvement of <i>Lab::Measurement</i> was supported by the
 <a href="http://www.dfg.de/en/" target="_blank">Deutsche Forschungsgemeinschaft</a>
 via grants Hu 1808/1 (Emmy Noether program), collaborative research centres 
-<a href="http://www-app.uni-regensburg.de/Fakultaeten/Physik/sfb689/" target="_blank">SFB 689</a>,
+<!a href="http://www-app.uni-regensburg.de/Fakultaeten/Physik/sfb689/" target="_blank">SFB 689</a>,
 <a href="https://www.sfb1277-regensburg.de/" target="_blank">SFB 1277</a>,
-and graduate research school <a href="http://www.physik.uni-regensburg.de/forschung/gk_carbonano/"
+and graduate research school <!a href="http://www.physik.uni-regensburg.de/forschung/gk_carbonano/"
 target="_blank">GRK 1570</a>, as well as directly by the <a href="http://www.ur.de/"
 target="_blank">Universität Regensburg</a>.
 </p>
