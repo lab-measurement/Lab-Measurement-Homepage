@@ -10,6 +10,12 @@
 <meta property="og:site_name" content="Lab::Measurement" />
 <link rel="stylesheet" type="text/css" href="doku.css" />
 </head>
+
+<?php
+set_include_path("./include");
+require_once('SimplePie.compiled.php');
+?>
+
 <body>
 <div id="header"><img id="logo" src="header.png" alt="Lab::Measurement"/></div>
 <div id="toc">
@@ -97,39 +103,40 @@ print $obj->{'version'};
 <ul>
 <?php 
 
-define('MAGPIE_CACHE_DIR', '/tmp/labmeasurement_magpie_cache');
+// We'll process this feed with all of the default options.
+$feed = new SimplePie();
 
-require_once 'magpierss/rss_fetch.inc';
+// Disable cache for the start
+$feed->enable_cache(false);
 
-$url1 = 'http://dilfridge.blogspot.com/feeds/posts/default/-/lab-measurement';
-$rss1 = fetch_rss($url1);
-$name1= 'Andreas K. Hüttel';
-foreach ($rss1->items as &$item1) { $item1['author']=$name1; }
+// Set which feed to process.
+// FIXME: re-add Simon's feed too
+// http://blogs.perl.org/mt/mt-search.fcgi?blog_id=2858&tag=lab-measurement&Template=feed&limit=20
+$feed->set_feed_url('http://dilfridge.blogspot.com/feeds/posts/default/-/lab-measurement');
 
-$url2 = 'http://blogs.perl.org/mt/mt-search.fcgi?blog_id=2858&tag=lab-measurement&Template=feed&limit=20';
-$rss2 = fetch_rss($url2);
-$name2= 'Simon Reinhardt';
-foreach ($rss2->items as &$item2) { $item2['author']=$name2; }
+// Run SimplePie.
+$feed->init();
 
-$allitems = array_merge($rss1->items, $rss2->items);
-
-function so ($a, $b) { return (strcmp ($b['published'],$a['published']));    }
-uasort($allitems, 'so');
+// This makes sure that the content is sent to the browser as text/html and the UTF-8 character set (since we didn't change it).
+$feed->handle_content_type();
 
 $counter = 1;
 
-foreach ($allitems as $item ) {
-    if ($counter<5) {
-        $title = $item['title'];
-        $published = preg_replace('/T.*$/','',$item['published']);
-        $author = $item['author'];
-        echo "<li><a href='news.php#pos$counter'>";
-        if ($counter == 1) { echo "<b>"; };
-        echo "$published: $title";
-        if ($counter == 1) { echo "</b>"; };
-        echo "</a></li>\n";
-        $counter++;
-    };
+foreach ($feed->get_items() as $item ) {
+	if ($counter < 6) {
+		$title = $item->get_title();
+		$published = $item->get_date('Y-m-d');
+		echo "<li><a href='news.php#pos$counter'>";
+		if ($counter == 1) { echo "<b>"; };
+		echo "$published: $title";
+		if ($counter == 1) { echo "</b>"; };
+		echo "</a></li>\n";
+	};
+	$counter++;
+}
+
+if ($counter > 5) {
+	echo "<li><a href='news.php#pos6'>older news items</a></li>";
 }
 
 ?>
