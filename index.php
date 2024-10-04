@@ -142,8 +142,7 @@ foreach ($allitems as $item ) {
 href="https://metacpan.org/release/Lab-Measurement">downloaded 
 from CPAN</a>. The <a href="https://github.com/lab-measurement/lab-measurement">source code archive can 
 be found at Github</a>, where you can also obtain the newest pre-release code and 
-browse the version history. For browsing the code we also have a direct 
-<a href="/gitweb/?p=labmeasurement;a=summary">gitweb access</a>.
+browse the version history.
 </p>
 
 <p>

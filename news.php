@@ -14,7 +14,6 @@
     <ul>
         <li><a href="https://metacpan.org/release/Lab-Measurement">CPAN releases</a></li>
         <li><a href="https://github.com/lab-measurement/lab-measurement">Github</a></li>
-        <li><a href="http://www.labmeasurement.de/gitweb/?p=labmeasurement;a=summary">Gitweb browser</a></li>
     </ul>
 </div>
 
