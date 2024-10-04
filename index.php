@@ -123,9 +123,9 @@ $feed->handle_content_type();
 $counter = 1;
 
 foreach ($feed->get_items() as $item ) {
-	if ($counter < 6) {
+	if ($counter < 5) {
 		$title = $item->get_title();
-		$published = $item->get_date('Y-m-d');
+		$published = $item->get_date('d.m.Y');
 		echo "<li><a href='news.php#pos$counter'>";
 		if ($counter == 1) { echo "<b>"; };
 		echo "$published: $title";
@@ -135,8 +135,8 @@ foreach ($feed->get_items() as $item ) {
 	$counter++;
 }
 
-if ($counter > 5) {
-	echo "<li><a href='news.php#pos6'>older news items</a></li>";
+if ($counter > 4) {
+	echo "<li><a href='news.php#pos5'>older news items ...</a></li>";
 }
 
 ?>
