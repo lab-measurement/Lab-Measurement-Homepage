@@ -23,6 +23,15 @@ require_once('SimplePie.compiled.php');
     </ul>
 </div>
 
+<style>
+div.separator {
+  float: right;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+</style>
+
 <?php
 
 // We'll process this feed with all of the default options.
