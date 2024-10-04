@@ -32,6 +32,8 @@ div.separator {
 }
 </style>
 
+<h1>News blog</h1>
+
 <?php
 
 // We'll process this feed with all of the default options.
@@ -59,7 +61,7 @@ foreach ($feed->get_items() as $item ) {
 		$url   = $item->get_link();
 		$published = $item->get_date('j F Y');
 		echo "<h2><a name='pos$counter'></a>$title &nbsp; <font size='-1'>(posted $published)</font></h2>\n";
-		echo "<div class='onlytext'>$content</div>\n\n";
+		echo "<div class='onlytext'>$content</div><br>\n\n";
 	};
 	$counter++;
 }
