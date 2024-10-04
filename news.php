@@ -6,6 +6,12 @@
 <link rel="stylesheet" type="text/css" href="doku.css" />
 </head>
 <body>
+
+<?php
+set_include_path("./include");
+require_once('SimplePie.compiled.php');
+?>
+
 <div id="header"><img id="logo" src="header.png" alt="Lab::Measurement"/></div>
 <div id="toc">
     <h1>Links</h1>
@@ -19,38 +25,34 @@
 
 <?php
 
-define('MAGPIE_CACHE_DIR', '/tmp/labmeasurement_magpie_cache');
+// We'll process this feed with all of the default options.
+$feed = new SimplePie();
 
-require_once 'magpierss/rss_fetch.inc';
+// Disable cache for the start
+$feed->enable_cache(false);
 
-$url1 = 'http://dilfridge.blogspot.com/feeds/posts/default/-/lab-measurement';
-$rss1 = fetch_rss($url1);
-$name1= 'Andreas K. Hüttel';
-foreach ($rss1->items as &$item1) { $item1['author']=$name1; }
+// Set which feed to process.
+// FIXME: re-add Simon
+$feed->set_feed_url('http://dilfridge.blogspot.com/feeds/posts/default/-/lab-measurement');
 
-$url2 = 'http://blogs.perl.org/mt/mt-search.fcgi?blog_id=2858&tag=lab-measurement&Template=feed&limit=20';
-$rss2 = fetch_rss($url2);
-$name2= 'Simon Reinhardt';
-foreach ($rss2->items as &$item2) { $item2['author']=$name2; }
+// Run SimplePie.
+$feed->init();
 
-$allitems = array_merge($rss1->items, $rss2->items);
-
-function so ($a, $b) { return (strcmp ($b['published'],$a['published']));    }
-uasort($allitems, 'so');
+// This makes sure that the content is sent to the browser as text/html and the UTF-8 character set (since we didn't change it).
+$feed->handle_content_type();
 
 $counter = 1;
 
-foreach ($allitems as $item ) {
-    if ($counter<15) {
-        $title = utf8_encode( $item['title'] );
-        $url   = $item['link'];
-        $published = preg_replace('/T.*$/','',$item['published']);
-        $author = $item['author'];
-	$content = utf8_encode ( $item[atom_content] );
-        echo "<a name='pos$counter'><h2>$title &nbsp; <font size='-1'>(posted $published by $author, <a href='$item[link]'>&rarr; original post</a>)</font></h2></a>\n";
-        echo "<p>$content<br></p>\n";
-        $counter++;
-    };
+foreach ($feed->get_items() as $item ) {
+	if ($counter<26) {
+		$title = $item->get_title();
+		$content = $item->get_content();
+		$url   = $item->get_link();
+		$published = $item->get_date('j F Y');
+		echo "<h2><a name='pos$counter'></a>$title &nbsp; <font size='-1'>(posted $published)</font></h2>\n";
+		echo "<div class='onlytext'>$content</div>\n\n";
+	};
+	$counter++;
 }
 
 ?>
